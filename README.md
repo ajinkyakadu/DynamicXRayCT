@@ -1,7 +1,7 @@
 # DynamicXRayCTVision
 
 
-Welcome to DynamicXRayCTVision! This repository houses the MATLAB codebase for our project titled "Single-shot Tomography of Discrete Dynamic Objects". Our work introduces a novel method for the reconstruction of high-resolution temporal images in dynamic tomographic imaging. See our work [here](https://arxiv.org/abs/2311.05269)
+Welcome to DynamicXRayCTVision! This repository houses the MATLAB codebase for our project titled [Single-shot Tomography of Discrete Dynamic Objects](https://arxiv.org/abs/2311.05269). Our work introduces a novel method for the reconstruction of high-resolution temporal images in dynamic tomographic imaging.
 
 ## Dynamic Tomographic Reconstruction
 
