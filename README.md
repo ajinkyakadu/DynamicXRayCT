@@ -1,4 +1,7 @@
+
+<div align=center>
 # 🌟 DynamicXRayCT 🌟
+</div>
 
 Welcome to **DynamicXRayCT**! This repository, complete with MATLAB code, is the backbone of our project: [Single-shot Tomography of Discrete Dynamic Objects](https://arxiv.org/abs/2311.05269). Dive into our innovative method transforming high-resolution temporal imaging in dynamic tomographic fields.
 
