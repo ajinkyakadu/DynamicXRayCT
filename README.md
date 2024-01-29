@@ -1,25 +1,27 @@
 
-<div align=center>
-# 🌟 DynamicXRayCT 🌟
+<div align="center">
+
+# <span style="font-size:24px; font-weight:bold;"> 🌟 DynamicXRayCT 🌟 </span> <br><br>
+
 </div>
 
-Welcome to **DynamicXRayCT**! This repository, complete with MATLAB code, is the backbone of our project: [Single-shot Tomography of Discrete Dynamic Objects](https://arxiv.org/abs/2311.05269). Dive into our innovative method transforming high-resolution temporal imaging in dynamic tomographic fields.
+
+Welcome to **DynamicXRayCT**! This repository, complete with MATLAB code, is the backbone of our project: [Single-shot Tomography of Discrete Dynamic Objects](https://arxiv.org/abs/2311.05269). Our work introduces a novel method for the reconstruction of high-resolution temporal images in dynamic tomographic imaging.
 
 ## 🚀 Dynamic Tomographic Reconstruction
 
-Facing the intricate task of capturing ever-changing discrete objects in dynamic tomography? **DynamicXRayCT** is your solution. By merging spatial and temporal insights of dynamic objects, we employ the level-set method for precision segmentation and a sinusoidal basis for dynamic motion. This blend leads to a computationally simple and easily fine-tuned variational framework, enabling 2D or 3D image sequencing with a single projections per frame.
-
+In the realm of dynamic tomographic imaging, capturing discrete objects with smooth boundaries that vary over time has always been a challenging task, especially with limited measurements at each time point. **DynamicXRayCT** addresses this challenge head-on. Our approach synergistically combines spatial and temporal information of dynamic objects, leveraging the level-set method for image segmentation and a sinusoidal basis for motion representation. This fusion results in a computationally efficient and easily optimizable variational framework. Our method stands out by enabling the reconstruction of high-quality 2D or 3D image sequences with just a single projection per frame.
 ## 🌈 Key Features
 
 - **Temporal Image Reconstruction**: Achieve high-resolution imaging with limited measurements.
-- **Level-Set Image Segmentation**: Precision segmentation for smoothly evolving objects.
-- **Sinusoidal Motion Capture**: Masterful depiction of object dynamics.
-- **Optimized Variational Framework**: Good computational efficiency and simplicity in optimization.
-- **Xray Dataset Compatibility**: Proven excellence with synthetic and real X-ray data.
+- **Level-Set Image Segmentation**: Segmentation for smoothly evolving objects.
+- **Sinusoidal Motion Capture**: Captures the dynamics of objects in motion.
+- **Optimized Variational Framework**: Offers computational efficiency and ease of optimization.
+- **Xray Dataset Compatibility**: Demonstrate better performance on both synthetic and real X-ray tomography datasets.
 
 ## 🛠 Getting Started
 
-Embark on your journey with DynamicXRayCT:
+Please refer to the following for setting up and running the code:
 
 - [Installation Instructions](#installation-instructions)
 - [Usage Guidelines](#usage-guidelines)
@@ -32,7 +34,7 @@ Repo Structure:
 
 ## 💡 Contributions and Feedback
 
-Your insights and contributions are the lifeblood of innovation. We invite you to:
+We welcome contributions and feedback from the community. We invite you to:
 
 - 🐛 Report Issues
 - 🌟 Suggest Enhancements
