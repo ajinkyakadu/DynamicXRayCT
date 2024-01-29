@@ -1,11 +1,11 @@
-# DynamicXRayCTVision
+# DynamicXRayCT
 
 
-Welcome to DynamicXRayCTVision! This repository houses the MATLAB codebase for our project titled [Single-shot Tomography of Discrete Dynamic Objects](https://arxiv.org/abs/2311.05269). Our work introduces a novel method for the reconstruction of high-resolution temporal images in dynamic tomographic imaging.
+Welcome to DynamicXRayCT! This repository houses the MATLAB codebase for our project titled [Single-shot Tomography of Discrete Dynamic Objects](https://arxiv.org/abs/2311.05269). Our work introduces a novel method for the reconstruction of high-resolution temporal images in dynamic tomographic imaging.
 
 ## Dynamic Tomographic Reconstruction
 
-In the realm of dynamic tomographic imaging, capturing discrete objects with smooth boundaries that vary over time has always been a challenging task, especially with limited measurements at each time point. DynamicXRayCTVision addresses this challenge head-on. Our approach synergistically combines spatial and temporal information of dynamic objects, leveraging the level-set method for image segmentation and a sinusoidal basis for motion representation. This fusion results in a computationally efficient and easily optimizable variational framework. Our method stands out by enabling the reconstruction of high-quality 2D or 3D image sequences with just a single projection per frame.
+In the realm of dynamic tomographic imaging, capturing discrete objects with smooth boundaries that vary over time has always been a challenging task, especially with limited measurements at each time point. DynamicXRayCT addresses this challenge head-on. Our approach synergistically combines spatial and temporal information of dynamic objects, leveraging the level-set method for image segmentation and a sinusoidal basis for motion representation. This fusion results in a computationally efficient and easily optimizable variational framework. Our method stands out by enabling the reconstruction of high-quality 2D or 3D image sequences with just a single projection per frame.
 
 ## Key Features
 
