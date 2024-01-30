@@ -1,12 +1,30 @@
+<p align="center">
+  <p align="center">
+    <h1 align="center">DynamicXRayCT: Tomographic Reconstruction of Discrete Dynamic Objects </h1>
+  </p>
+  <p align="center" style="font-size:16px">
+    <a target="_blank" href="https://ajinkyakadu.github.io/"><strong>Ajinkya Kadu</strong></a>
+    ·
+    <a target="_blank" href="https://felixlucka.github.io/"><strong>Felix Lucka</strong></a>
+    ·
+    <a target="_blank" href="https://scholar.google.com/citations?user=YYH0BjEAAAAJ&hl=en"><strong>Joost Batenburg</strong></a>
+  </p>
+  <h2 align="center">IEEE TCI</h2>
+  <div align="center"></div> 
 
-<div align="center">
+  <p align="center">
+    <a href="https://astra-toolbox.com/"><img alt="ASTRA-TOOLBOX" src="https://img.shields.io/badge/astra%20toolbox-8A2BE2"></a>
+    <a href="https://www.mathworks.com/products/matlab.html"><img alt="MATLAB" src="https://img.shields.io/badge/MATLAB-FFFF00"></a>
+    <br>
+    <a href='https://arxiv.org/pdf/2311.05269.pdf'>
+      <img src='https://img.shields.io/badge/Paper-PDF-green?style=for-the-badge&logo=arXiv&logoColor=green' alt='Paper PDF'>
+    </a>
+  </p>
+<p align="center">
 
-# <span style="font-size:24px; font-weight:bold;"> 🌟 DynamicXRayCT 🌟 </span> <br><br>
-
-</div>
 
 
-Welcome to **DynamicXRayCT**! This repository provides the code of our project: [Single-shot Tomography of Discrete Dynamic Objects](https://arxiv.org/abs/2311.05269). Our work introduces a novel method for the reconstruction of high-resolution temporal images in dynamic tomographic imaging.
+Welcome to **DynamicXRayCT**! We introduce a novel method for the reconstruction of high-resolution temporal images in dynamic tomographic imaging.
 
 ## 🚀 Dynamic Tomographic Reconstruction
 
