@@ -50,9 +50,23 @@ Repo Structure:
 - `📁 /examples`: CT applications and examples.
 - `📁 /docs`: In-depth documentation and resources.
 
-## 💡 Contributions and Feedback
+## 📚 Citation  
+```bibtex
+@article{Kadu:DynamicTomo:2023,
+  title={Single-shot Tomography of Discrete Dynamic Objects},
+  author={Kadu, Ajinkya and Lucka, Felix and Batenburg, Kees Joost},
+  journal={arXiv preprint arXiv:2311.05269},
+  year={2023}
+}
+```
 
-We welcome contributions and feedback from the community. We invite you to:
+## ©️ License
+The code and models are available for use without many restrictions. 
+See the [LICENSE](LICENSE) file for details. 
+
+
+## 💡 Contributions and Feedback
+Please  contact [Ajinkya Kadu](https://ajinkyakadu.github.io/) for any questions. We welcome contributions and feedback from the community. Please do not hesitate to get in touch. We invite you to:
 
 - 🐛 Report Issues
 - 🌟 Suggest Enhancements
