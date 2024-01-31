@@ -30,6 +30,7 @@ Welcome to **DynamicXRayCT**! We introduce a novel method that integrates level-
 
 In dynamic tomographic imaging, capturing discrete objects with smooth boundaries that vary over time has always been a challenging task, especially with limited measurements at each time point. **DynamicXRayCT** addresses this challenge by advanced algorithm. Our approach combines spatial and temporal information of dynamic objects, using the level-set method for image segmentation and a sinusoidal basis for motion representation. This results in a computationally efficient and easily optimizable variational framework called Dynamic Shape Sensing (DSS). Our method stands out by enabling the reconstruction of high-quality 2D or 3D image sequences with just a single projection per frame.
 
+
 ## 🌈 Key Features
 
 - **Temporal Image Reconstruction**: Achieve high-resolution imaging with limited measurements.
@@ -37,6 +38,19 @@ In dynamic tomographic imaging, capturing discrete objects with smooth boundarie
 - **Sinusoidal Motion Capture**: Captures the dynamics of objects in motion.
 - **Optimized Variational Framework**: Offers computational efficiency and ease of optimization.
 - **Xray Dataset Compatibility**: Demonstrate better performance on both synthetic and real X-ray tomography datasets.
+
+<details><summary>Please consider citing our work if you find it useful</summary>
+
+```bibtex
+@article{Kadu:DynamicTomo:2023,
+  title={Single-shot Tomography of Discrete Dynamic Objects},
+  author={Kadu, Ajinkya and Lucka, Felix and Batenburg, Kees Joost},
+  journal={arXiv preprint arXiv:2311.05269},
+  year={2023}
+}
+```
+</details>
+<br>
 
 ## 🛠 Getting Started
 
