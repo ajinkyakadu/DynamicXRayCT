@@ -24,7 +24,7 @@
 
 
 
-Welcome to **DynamicXRayCT**! We introduce a novel method for the reconstruction of high-resolution temporal images in dynamic tomographic imaging.
+Welcome to **DynamicXRayCT**! We introduce a novel method that integrates level-set method and compressed sensing for the reconstruction of temporal images in dynamic tomographic imaging.
 
 ## 🚀 Dynamic Tomographic Reconstruction
 
