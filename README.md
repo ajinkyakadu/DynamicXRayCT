@@ -28,7 +28,8 @@ Welcome to **DynamicXRayCT**! We introduce a novel method for the reconstruction
 
 ## 🚀 Dynamic Tomographic Reconstruction
 
-In the realm of dynamic tomographic imaging, capturing discrete objects with smooth boundaries that vary over time has always been a challenging task, especially with limited measurements at each time point. **DynamicXRayCT** addresses this challenge head-on. Our approach synergistically combines spatial and temporal information of dynamic objects, leveraging the level-set method for image segmentation and a sinusoidal basis for motion representation. This fusion results in a computationally efficient and easily optimizable variational framework. Our method stands out by enabling the reconstruction of high-quality 2D or 3D image sequences with just a single projection per frame.
+In dynamic tomographic imaging, capturing discrete objects with smooth boundaries that vary over time has always been a challenging task, especially with limited measurements at each time point. **DynamicXRayCT** addresses this challenge by advanced algorithm. Our approach combines spatial and temporal information of dynamic objects, using the level-set method for image segmentation and a sinusoidal basis for motion representation. This results in a computationally efficient and easily optimizable variational framework called Dynamic Shape Sensing (DSS). Our method stands out by enabling the reconstruction of high-quality 2D or 3D image sequences with just a single projection per frame.
+
 ## 🌈 Key Features
 
 - **Temporal Image Reconstruction**: Achieve high-resolution imaging with limited measurements.
@@ -46,9 +47,9 @@ Please refer to the following for setting up and running the code:
 
 Repo Structure:
 
-- `📁 /src`: The heart of our method - the source code.
+- `📁 /src`: the source codes.
 - `📁 /examples`: CT applications and examples.
-- `📁 /docs`: In-depth documentation and resources.
+- `📁 /docs`: documentation and resources.
 
 ## 📚 Citation  
 ```bibtex
@@ -66,7 +67,7 @@ See the [LICENSE](LICENSE) file for details.
 
 
 ## 💡 Contributions and Feedback
-Please  contact [Ajinkya Kadu](https://ajinkyakadu.github.io/) for any questions. We welcome contributions and feedback from the community. Please do not hesitate to get in touch. We invite you to:
+Please contact [Ajinkya Kadu](https://ajinkyakadu.github.io/) for any questions. We welcome contributions and feedback from the community. We invite you to:
 
 - 🐛 Report Issues
 - 🌟 Suggest Enhancements
