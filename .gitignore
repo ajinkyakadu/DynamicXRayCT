@@ -424,6 +424,9 @@ codegen/
 # Octave session info
 octave-workspace
 
+#large matlab files
+*.mat
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
