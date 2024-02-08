@@ -625,5 +625,6 @@ $RECYCLE.BIN/
 
 # Results folder
 /results/
+/examples/results/
 
 # End of https://www.toptal.com/developers/gitignore/api/matlab,python,c++,latex,macos,windows,linux
