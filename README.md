@@ -1,6 +1,6 @@
 <p align="center">
   <p align="center">
-    <h1 align="center">DynamicXRayCT: Tomographic Reconstruction of Discrete Dynamic Objects </h1>
+    <h1 align="center">DynamicTomography: Tomographic Reconstruction of Discrete Dynamic Objects </h1>
   </p>
   <p align="center" style="font-size:16px">
     <a target="_blank" href="https://ajinkyakadu.github.io/"><strong>Ajinkya Kadu</strong></a>
