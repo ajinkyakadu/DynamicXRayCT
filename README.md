@@ -24,11 +24,11 @@
 
 
 
-Welcome to **DynamicXRayCT**! We introduce a novel method that integrates level-set method and compressed sensing for the reconstruction of temporal images in dynamic tomographic imaging.
+Welcome to **DynamicTomography**! We introduce a novel method that integrates level-set method and compressed sensing for the reconstruction of temporal images in dynamic tomographic imaging.
 
 ## 🚀 Dynamic Tomographic Reconstruction
 
-In dynamic tomographic imaging, capturing discrete objects with smooth boundaries that vary over time has always been a challenging task, especially with limited measurements at each time point. **DynamicXRayCT** addresses this challenge by advanced algorithm. Our approach combines spatial and temporal information of dynamic objects, using the level-set method for image segmentation and a sinusoidal basis for motion representation. This results in a computationally efficient and easily optimizable variational framework called Dynamic Shape Sensing (DSS). Our method stands out by enabling the reconstruction of high-quality 2D or 3D image sequences with just a single projection per frame.
+In dynamic tomographic imaging, capturing discrete objects with smooth boundaries that vary over time has always been a challenging task, especially with limited measurements at each time point. **DynamicTomography** addresses this challenge by advanced algorithm. Our approach combines spatial and temporal information of dynamic objects, using the level-set method for image segmentation and a sinusoidal basis for motion representation. This results in a computationally efficient and easily optimizable variational framework called Dynamic Shape Sensing (DSS). Our method stands out by enabling the reconstruction of high-quality 2D or 3D image sequences with just a single projection per frame.
 
 
 ## 🌈 Key Features
