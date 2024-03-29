@@ -27,6 +27,12 @@ if nargin < 2, nT       = 360;    end
 if nargin < 3, phName1  = 'bell'; end
 if nargin < 4, phName2  = 'tree'; end
 
+fprintf('\n'); 
+fprintf('=============================================================\n');
+fprintf('<strong>             Generating Phantom</strong>\n');
+fprintf('                (Non-Rigid Motion) \n');
+fprintf('=============================================================\n');
+
 % Read in the input image 1
 imageA = imread([phName1 '.png']);
 imageA = single(imageA);
@@ -56,7 +62,7 @@ matchedPointsB = validPointsB(indexPairs(:, 2), :);
 controlPointsA = matchedPointsA.Location;
 controlPointsB = matchedPointsB.Location;
 
-fprintf('generated %d control points \n', size(controlPointsA,1));
+% fprintf('generated %d control points \n', size(controlPointsA,1));
 
 %%% initialize
 V(:,:,1)    = imageA;
@@ -82,8 +88,9 @@ end
 % convert to single precision
 V = single(V);
 
-% print
-fprintf('Image size: %d x %d \n',size(warpedImage));
-fprintf('timestamps: %d \n',nT);
+% Print information about the generated video
+fprintf('Image size: %d x %d\n', [size(V, 1) size(V, 2)]);
+fprintf('Timestamps: %d\n', nT);
+fprintf('=============================================================\n');
 
 end

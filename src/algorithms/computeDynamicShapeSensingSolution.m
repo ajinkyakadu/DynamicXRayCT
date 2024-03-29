@@ -1,6 +1,6 @@
-function [V_iter, en_iter, t_iter] = computeDynamicShapeSensingSolution(A, y, n, numIter, use_cuda, ...
+function [V_iter, en_iter, t_iter, fhist] = computeDynamicShapeSensingSolution(A, y, n, numIter, use_cuda, ...
     options, init_sol, plot_iterates)
-% GENERATEDYNAMICSHAPESENSINGSOLUTION generates a Dynamic Shape Sensing
+% COMPUTEDYNAMICSHAPESENSINGSOLUTION generates a Dynamic Shape Sensing
 % solution for the input data.
 %
 % Inputs:
@@ -115,6 +115,7 @@ hist.options = options;
 hist.optimOpt= optimOpt;
 
 DSSOpt = struct();
+fhist  = [];
 
 clock_cmp = tic;
 
@@ -133,11 +134,11 @@ for i=1:numIter
     DSSOpt.kappa = kappa;
     fh = @(x) levelSetDCT(x, F, use_cuda, DSSOpt);
 
-    fprintf('iter:%2.0d/%2.0d kappa:%.4f tau=%8.2f/%8.2f, uval=%.2f | ', i, numIter, kappa, ...
-        norm(xIter,1), tau, DSSOpt.m1);
+    fprintf('iter:%2.0d/%2.0d kappa:%.4f uval=%.2f | ', i, numIter, kappa, ...
+        DSSOpt.m1);
     
     % minimize
-    [xIter, ~] = minConf_SPG(fh, xIter, funProj, optimOpt);
+    [xIter, ~, ~, ~, fhistIter] = minConf_SPG(fh, xIter, funProj, optimOpt);
 
     % Process intermediate images and update the optimization parameters
     [V_iter,phi_iter,~] = generateImage(xIter, n, x_id, kappa, use_cuda);
@@ -163,6 +164,8 @@ for i=1:numIter
     if(plot_iterates)
         plotIntermediateSolution(V_iter)
     end
+
+    fhist = [fhist;fhistIter(:)];
     
 end
 

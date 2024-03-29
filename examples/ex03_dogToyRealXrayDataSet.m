@@ -3,9 +3,6 @@
 % Clear variables and close all figures
 clearvars; close all; clc;
 
-%%% Set the seed for the random number generator
-myStream = RandStream('mt19937ar', 'Seed', 1);
-RandStream.setGlobalStream(myStream)
 
 % check whether we are in display mode
 visulization = usejava('desktop');
@@ -27,36 +24,55 @@ if use_cuda
 end
 
 %%% save directory
-resDir = [pwd '/results/rigidPhantom/'];
+resDir = [pwd '/results/CWIdogToyCT/'];
 if ~exist(resDir, 'dir'), mkdir(resDir); end
 
-%% create a rigidphantom
-% rigid motion of two disks with constant intensity
+%% (download and) load dataset
+% Dataset is available on Zenodo (This is the processed dataset; hence can
+% be included and work with directly).
 
-N  = 256;       % Image dimensions
-nT = 512;       % Number of frames,
-dt = 0.01;      % Time step
 
-% generate phantom
-V_true = generateRigidVideo(N, nT, dt);
+% URL of the dataset
+url = 'https://zenodo.org/records/10808364/files/GrayBone90kV4FilterPreprocessed.mat?download=1';
+
+% Specify the file name
+fileName = 'GrayBone90kV4FilterPreprocessed.mat';
+filePath = fullfile(resDir, fileName); % Full path to the file
+
+% Check if the file already exists; If the file does not exist, download 
+% the file
+if exist(filePath, 'file')
+    disp(['File already exists at: ', filePath]);
+else
+    
+    websave(filePath, url);
+    disp(['File downloaded to: ', filePath]);
+end
+
+
+% Load the dataset into MATLAB workspace
+load(filePath);
+disp('Dataset loaded into MATLAB workspace here');
+
 
 %% setup the X-ray tomography (parallel-beam)
 
-% define the angular step size and the noise level
+% Define the angular step size
+nT     = 600;
 dTheta = 5;
-noiseL = 0.01;
 
-% Perform the projections and store the measurements
-[A, Af, y, theta] = singleShotProjections(V_true, dTheta, noiseL, use_cuda);
+[A, Af, y, angles] = getRealTomographicMeasurements(stack, nT, dTheta, use_cuda);
 
-% get the size
-n = size(V_true);
+V_true = im2single(stack.rec(:,:,1:nT));
+
+clear stack
+
 
 %% Algorithms
 
 % Initialize parameters for a given phantom
 maxIter= 1000;
-params = getDefaultParameters(maxIter, dTheta, 'rigidPhantom');
+params = getDefaultParameters(maxIter, dTheta, 'cwidogtoy');
 algoResults = struct();
 
 %%% Static binned reconstruction
@@ -125,5 +141,7 @@ results = computeAlgorithmMetrics(runFlags, algoResults, V_true);
 
 execTime = char(datetime("now", "Format","uuuuMMdd'T'HHmmss"));
 save([resDir 'results_ ' execTime '.mat'], 'params', 'results', '-v7.3');
+
+
 
 

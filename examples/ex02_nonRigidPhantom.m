@@ -30,15 +30,14 @@ end
 resDir = [pwd '/results/rigidPhantom/'];
 if ~exist(resDir, 'dir'), mkdir(resDir); end
 
-%% create a rigidphantom
-% rigid motion of two disks with constant intensity
+%% create a non-rigid-phantom
+% converts the bell-phantom to tree-phantom using non-rigid deformations
 
-N  = 256;       % Image dimensions
-nT = 512;       % Number of frames,
-dt = 0.01;      % Time step
+N  = 512;       % Image dimensions
+nT = 360;       % Number of frames,
 
 % generate phantom
-V_true = generateRigidVideo(N, nT, dt);
+V_true = generateDeformationVideoA2B(N, nT, 'bell', 'tree');
 
 %% setup the X-ray tomography (parallel-beam)
 
@@ -125,5 +124,7 @@ results = computeAlgorithmMetrics(runFlags, algoResults, V_true);
 
 execTime = char(datetime("now", "Format","uuuuMMdd'T'HHmmss"));
 save([resDir 'results_ ' execTime '.mat'], 'params', 'results', '-v7.3');
+
+
 
 
